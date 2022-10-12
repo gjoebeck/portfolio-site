@@ -1,0 +1,118 @@
+body {
+    background-image: url(../../resources/images/pexels-suzy-hazelwood-1629236.jpg);
+    opacity: 0.9;
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #080808;
+}
+
+body,
+body>div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a {
+    color: white;
+}
+
+header {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    right: 200px;
+    text-align:center;
+    z-index: 10;
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.75s;
+    display: inline-block;
+}
+
+header ul {
+    display: inline-block;
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+shape-outer {
+    display: flex;
+    flex-shrink: 0;
+    height: calc(150px + 4vw);
+    width: calc(150px + 4vw);
+    margin: 25px;
+    background-image: linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+}
+
+.shape-inner {	
+    height: calc(130px + 4vw);
+    width: calc(130px + 4vw);
+    background: url(../images/unnamed.jpg) no-repeat center;
+    background-size: cover;
+    margin: auto;
+}
+
+.circle {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    		clip-path: circle(50% at 50% 50%);
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+    font-weight: 900;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 0.9em;
+    border: #fff;
+}
+
+.subname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+    font-weight: 900;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 0.9em;
+}
+
+.resume {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 0.7em;
+    color: #fff;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    right: 300px;
+}
+
+
+
+#github-logo:hover {
+    background-image: linear-gradient(to right,
+            #54b3d6,
+            #54b3d6 50%,
+            #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
